@@ -21,9 +21,7 @@ namespace MathCalculator.ConsoleApp
                         throw new Exception("String is Empty");
                     }
 
-                    Calculator calculator = new Calculator(incomingStr);
-
-                    result = calculator.Calculation(); 
+                    result = new Runner(incomingStr).Run();
 
                     Console.WriteLine(result);
                 }

@@ -11,7 +11,6 @@ namespace MathCalculator.Tests
             var str = PatternGenerator.Generate();
 
             Assert.AreEqual(str, @"(\()|(\))|(-)|(\+)|(/)|(\*)|(~)");
-
         }
     }
 }
